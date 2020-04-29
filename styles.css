@@ -1,0 +1,439 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  width: 1440px;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+
+.light-title {
+  color: hsl(230, 17%, 14%);
+}
+
+.light-sub {
+  color: hsl(228, 12%, 44%);
+}
+
+.dark-title {
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-sub {
+  color: hsl(228, 34%, 66%);
+}
+
+.variation{
+  font-size: 14px;
+  font-weight: 700;
+  display: inline;
+  line-height: 20px;
+}
+
+.red {
+  color: hsl(356, 69%, 56%);
+}
+
+.green {
+  color: hsl(163, 72%, 41%);
+}
+
+.arrow {
+  display: inline;
+  position: relative;
+  bottom: 3px;
+}
+
+/* #content {
+  position: relative;
+} */
+
+
+#top-container {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.light-top-bg {
+  background-color: hsl(225, 100%, 98%);
+}
+
+.dark-top-bg {
+  background-color: hsl(232, 19%, 15%);
+}
+
+.light-bg {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.dark-bg {
+  background-color: hsl(230, 17%, 14%);
+}
+
+#middle-container {
+  position: absolute;
+  top: 90px;
+}
+
+#bottom-container {
+  position: relative;
+}
+
+#cards {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#tickets {
+  display: flex;
+  padding: 1% 10%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  padding: 3% 1% 0% 1%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  width: 210px;
+  height: 180px;
+  vertical-align: middle;
+  border-radius: 8px;
+}
+
+
+.light-card {
+  background-color: hsl(227, 47%, 96%);
+}
+
+.dark-card {
+  background-color: hsl(228, 28%, 20%);
+}
+
+
+.light-card:hover {
+  background-color: hsl(231, 31%, 91%);
+}
+
+.dark-card:hover {
+  background-color: hsl(226, 26%, 27%);
+}
+
+.card-title {
+  line-height: 20px;
+  display: inline;
+  margin:10px 10px;
+}
+
+.icon {
+  display: inline;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 15px 0 0 2px;
+  line-height: 3.5rem
+}
+.followers {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 6px;
+  margin: 0 0 20px 0;
+}
+
+.first {
+  border-top: solid;
+  border-top-color: hsl(195, 100%, 50%);
+}
+
+.second {
+  border-top: solid;
+  border-top-color: hsl(203, 89%, 53%);
+}
+
+.third {
+  border-top: solid transparent;
+  border-image-source: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  border-image-slice: 1;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+
+.fourth {
+  border-top: solid;
+  border-top-color: hsl(348, 97%, 39%);
+}
+
+
+.overview {
+  display: block;
+  width: 100%;
+}
+
+.ticket {
+  display: inline-block;
+  padding: 1% 1% 1% 1%;
+  width: 210px;
+  height: 85px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.ticket-row {
+  margin: 0;
+  height: 20px;
+  position: relative;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 5% 5% 5% 5%
+}
+
+.ticket-title{
+  display: inline-block;
+  margin:0;
+  line-height: 20px;
+  font-size: 14px;
+  width: 80%;
+  vertical-align: middle;
+  position: absolute;
+}
+
+.icon-ticket{
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  margin: auto;
+  right: 5%;
+}
+
+.ticket-number{
+  font-size: 28px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+}
+
+.ev {
+  position: absolute;
+  right: 5%;
+}
+
+.title-container {
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  display: inline-block;
+  width: 50%;
+  height: 72px;
+  padding-left: 10%
+}
+
+.title {
+margin-top: 20px;
+margin-bottom: 2px;
+font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+
+.theme {
+  display: inline;
+  text-align: center;
+  padding: 3%;
+}
+
+.theme-select {
+  flex: 1 1 auto;
+  margin: 20px 0 0 0;
+  display: inline-block;
+  position: relative;
+  height: 72px;
+  width: 70px;
+  text-align: right;
+  padding-right: 10%
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 26px;
+  bottom: 2px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(230, 22%, 74%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: hsl(225, 100%, 98%) ;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:hover {
+  background: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+input:checked + .slider {
+  background: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+    background-color: hsl(230, 17%, 14%);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media (max-width: 375px) {
+
+#top-container{
+  display: block;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.title-container {
+  display: inline-block;
+  height: 80px;
+  width: 80%;
+  padding: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+
+.theme-select {
+  display: inline-block;
+  position: relative;
+  height: 72px;
+  width: 80%;
+  padding: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.theme {
+  display: inline;
+  text-align: center;
+  padding: 3% 3% 3% 0%;
+  position: absolute;
+  left: 0;
+  top: -19px;
+}
+
+.card {
+  padding: 3% 0% 0% 0%;
+  display: inline-block;
+  text-align: center;
+  margin: 10px auto;
+  width: 80%;
+  height: 180px;
+  vertical-align: middle;
+  border-radius: 8px;
+}
+
+#cards {
+  text-align: center;
+  padding: 0;
+}
+
+#middle-container {
+  position: absolute;
+  top: 140px;
+}
+
+.ticket {
+  display: inline-block;
+  padding: 3% 3% 3% 3%;
+  width: 90%;
+  height: 85px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+.light-top-bg {
+  background-color: hsl(225, 100%, 98%);
+  border-bottom-color: hsl(228, 12%, 44%);
+}
+
+.dark-top-bg {
+  background-color: hsl(232, 19%, 15%);
+  border-bottom-color: hsl(228, 34%, 66%);
+}
+
+
+
+}

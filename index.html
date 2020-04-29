@@ -1,87 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | [Challenge Name Here]</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+<body class="light-bg">
+  <section id="top-container" class="light-top-bg">
+    <div class="title-container light-top-bg">
+      <h1 class="title light-title">Social Media Dashboard</h1>
+      <h3 class="subtitle light-sub">Total Followers: 23,004</h3>
+    </div>
+    <div class="theme-select">
+      <h3 class="theme light-sub">Dark Mode</h3>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </section>
+  <section id="middle-container">
+    <section id="cards">
+      <div class="card first light-card">
+        <img src="images/icon-facebook.svg" class="icon">
+        <h3 class="card-title light-sub">@nathanf</h2>
+          <p class="number light-title">1987</p>
+          <p class="followers light-sub">FOLLOWERS</p>
+          <img class="arrow" src="images/icon-up.svg">
+          <p class="variation green">12 Today</p>
+      </div>
+      <div class="card second light-card">
+        <img src="images/icon-twitter.svg" class="icon">
+        <h3 class="card-title light-sub">@nathanf</h2>
+          <p class="number light-title">1044</p>
+          <p class="followers light-sub">FOLLOWERS</p>
+          <img class="arrow" src="images/icon-up.svg">
+          <p class="variation green">99 Today</p>
+      </div>
+      <div class="card third light-card">
+        <img src="images/icon-instagram.svg" class="icon">
+        <h3 class="card-title light-sub">@realnathanf</h2>
+          <p class="number light-title">11k</p>
+          <p class="followers light-sub">FOLLOWERS</p>
+          <img class="arrow" src="images/icon-up.svg">
+          <p class="variation green">1099 Today</p>
+      </div>
+      <div class="card fourth light-card">
+        <img src="images/icon-youtube.svg" class="icon">
+        <h3 class="card-title light-sub">Nathan F.</h2>
+          <p class="number light-title">8239</p>
+          <p class="followers light-sub">SUBSCRIBERS</p>
+          <img class="arrow" src="images/icon-down.svg">
+          <p class="variation red">144 Today</p>
+      </div>
+    </section>
+    <section id="tickets">
+      <h1 class="overview light-title">Overview - Today</h1>
+      <div class="ticket light-card">
+        <div class="ticket-row">
+          <h2 class="ticket-title light-sub">Page Views</h2>
+          <img src="images/icon-facebook.svg" class="icon-ticket">
+        </div>
+        <div class="ticket-row">
+          <p class="ticket-number light-title">87</p>
+          <div class="ev">
+            <img class="arrow" src="images/icon-up.svg">
+            <p class="variation green">3%</p>
+          </div>
+        </div>
+      </div>
+      <div class="ticket light-card">
+        <div class="ticket-row">
+          <h2 class="ticket-title light-sub">Likes</h2>
+          <img src="images/icon-facebook.svg" class="icon-ticket">
+        </div>
+        <div class="ticket-row">
+          <p class="ticket-number light-title">52</p>
+          <div class="ev">
+            <img class="arrow" src="images/icon-down.svg">
+            <p class="variation red">2%</p>
+          </div>
+        </div>
+      </div>
+      <div class="ticket light-card">
+        <div class="ticket-row">
+          <h2 class="ticket-title light-sub">Likes</h2>
+          <img src="images/icon-instagram.svg" class="icon-ticket">
+        </div>
+        <div class="ticket-row">
+          <p class="ticket-number light-title">5462</p>
+          <div class="ev">
+            <img class="arrow" src="images/icon-up.svg">
+            <p class="variation green">2257%</p>
+          </div>
+        </div>
+      </div>
+      <div class="ticket light-card">
+        <div class="ticket-row">
+          <h2 class="ticket-title light-sub">Profile Views</h2>
+          <img src="images/icon-instagram.svg" class="icon-ticket">
+        </div>
+        <div class="ticket-row">
+          <p class="ticket-number light-title">52k</p>
+          <div class="ev">
+            <img class="arrow" src="images/icon-up.svg">
+            <p class="variation green">1375%</p>
+          </div>
+        </div>
+      </div>
+      <div class="ticket light-card">
+        <div class="ticket-row">
+          <h2 class="ticket-title light-sub">Retweets</h2>
+          <img src="images/icon-twitter.svg" class="icon-ticket">
+        </div>
+        <div class="ticket-row">
+          <p class="ticket-number light-title">117</p>
+          <div class="ev">
+            <img class="arrow" src="images/icon-up.svg">
+            <p class="variation green">303%</p>
+          </div>
+        </div>
+      </div>
+      <div class="ticket light-card">
+        <div class="ticket-row">
+          <h2 class="ticket-title light-sub">Likes</h2>
+          <img src="images/icon-twitter.svg" class="icon-ticket">
+        </div>
+        <div class="ticket-row">
+          <p class="ticket-number light-title">507</p>
+          <div class="ev">
+            <img class="arrow" src="images/icon-up.svg">
+            <p class="variation green">553%</p>
+          </div>
+        </div>
+      </div>
+      <div class="ticket light-card">
+        <div class="ticket-row">
+          <h2 class="ticket-title light-sub">Likes</h2>
+          <img src="images/icon-youtube.svg" class="icon-ticket">
+        </div>
+        <div class="ticket-row">
+          <p class="ticket-number light-title">107</p>
+          <div class="ev">
+            <img class="arrow" src="images/icon-down.svg">
+            <p class="variation red">19%</p>
+          </div>
+        </div>
+      </div>
+      <div class="ticket light-card">
+        <div class="ticket-row">
+          <h2 class="ticket-title light-sub">Total Views</h2>
+          <img src="images/icon-youtube.svg" class="icon-ticket">
+        </div>
+        <div class="ticket-row">
+          <p class="ticket-number light-title">1407</p>
+          <div class="ev">
+            <img class="arrow" src="images/icon-down.svg">
+            <p class="variation red">12%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
 
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
 
 
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <section id="bottom-container">
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Younes El garrai</a>.
+  </div> -->
+  </section>
+  <script src="index.js"></script>
 </body>
+
 </html>
